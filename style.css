@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mate&family=Pacifico&family=Source+Serif+Pro:wght@200;300&display=swap');
-
+/* MAIN PROPERTY */
 :root{
     --logo_font : 'Pacifico',cursive;
     --header_font : 'Dancing Script',cursive;
@@ -98,10 +98,9 @@ header .menu a:hover{
     background: none;
 }
 
-/* content */
+/* top-content */
 .top-wrapper{
     background-image: linear-gradient(rgba(56, 57, 64 ,0.7),rgba(56, 57, 64 ,0.6),rgba(203, 221, 152, 0.5)),url(./img/cover.jpg);
-    /* height: 700px; */
     padding: 300px 0 100px 0;
     max-height: 900px;
     background-size: cover;
@@ -153,7 +152,7 @@ header .menu a:hover{
     position: relative;
     animation: MoveUpDown 1.5s linear infinite;
 } 
-
+/* animasi updown */
 @keyframes MoveUpDown {
     0%, 100% {
       bottom: 0;
@@ -172,7 +171,7 @@ header .menu a:hover{
     text-decoration: none;
     font-size: 20px;
 }
-
+/* show-content */
 .show-wrapper{
     padding: 100px 0 50px 0px;
     background-color: whitesmoke;
@@ -258,7 +257,7 @@ header .menu a:hover{
     font-weight: bolder;
     font-size: 25px;
 }
-
+/* activity content */
 
 .activity-wrapper{
     padding: 100px 0px 50px 0px;
@@ -376,9 +375,8 @@ header .menu a:hover{
 .clear{
     clear: auto;
 }
-/* Nama class jangan nabrak ya, makasi SEMANGAT!! */
 
-/* booking */
+/* booking -content*/
 .booking-wrapper {
     padding: 100px 0 50px 0px;
     background-color: white;
@@ -467,11 +465,11 @@ textarea:focus, input:focus{
     border-radius: 10px;
 }
 
-/* footer */
+/* margin-fa */
 .fa{
     margin: 0 10px;
 }
-
+/* about-content */
 .about-wrapper{
     padding: 50px 0px;
     border-top: 1px solid var(--yellow);
@@ -654,7 +652,7 @@ textarea:focus, input:focus{
     border-radius: 15px;
     border: 5px solid var(--yellow);
 }
-
+/* footer */
 footer{
     background-color: var(--yellow);
     padding: 2px;
