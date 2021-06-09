@@ -378,53 +378,283 @@ header .menu a:hover{
 }
 /* Nama class jangan nabrak ya, makasi SEMANGAT!! */
 
+/* booking */
+.booking-wrapper {
+    padding: 100px 0 50px 0px;
+    background-color: white;
+    border-top: 4px solid var(--yellow);
+    color: black;
+    text-align: left;
+}
+
+.booking-header {
+    text-align: left;
+    margin: 0px 15px 0px 15px;
+    color: black;
+    font-family: var(--yellow);
+    font-size: 35px;
+    font-family: var(--header_font);
+    position: relative;
+}
+
+.booking-header::after {
+    content: "";
+    height: 0.18rem;
+    background-color: var(--yellow);
+    width: 75%;
+    position: absolute;
+    left: 250px;
+    top: 20px;
+}
+
+.form {
+    padding: 20px 20px;
+    margin-left: 10px;
+    /* z-index: 3; */
+    /* background-image: linear-gradient(rgba(56, 57, 64 ,0.7)),url(./img/pura2.png); */
+    /* background-image: url(./img/pura2.png);
+    background-size: cover;
+    opacity: 0.5; */
+}
+
+.booking-image {
+    background-image: linear-gradient(90deg,rgba(255, 255, 255 ,0.8),rgba(255, 255, 255 ,0.6),rgba(203, 221, 152, 0.5)),url(./img/pura2.png);
+    background-size: cover;
+    box-shadow: 5px 3px 3px 3px rgba(245, 245, 245 ,0.8);
+    /* background-blend-mode: soft-light; */
+}
+
+.form-group {
+    padding-bottom: 20px;
+    /* z-index: 2;    */
+}
+
+.form-group p {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: var(--text_font);
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: none;
+    /* border: 1px outset rgba(245, 245, 245 ,0.8); */
+    box-shadow: 5px 5px 5px 4px rgba(225, 225, 225 ,0.8);
+    border-radius: 10px;
+    font-family: var(--text_font);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: auto;
+}
+
+.booking-btn {
+    width: 400px;
+}
+
+.booking-button {
+    background: var(--yellow);
+    color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 5px solid #ebb434;
+    padding: 10px 140px;
+    text-decoration: none;
+    font-family: var(--header_font);
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
 
 /* footer */
 .fa{
     margin: 0 10px;
 }
 
-/*Online Academy*/
-.about-wrapper {
-    padding-top: 40px;
-    padding-bottom:150px;
-    text-align: center;
+.about-wrapper{
+    padding: 50px 0px;
+    border-top: 1px solid var(--yellow);
+    border-bottom: 2px double var(--yellow);
+    background-color: rgba(56, 57, 64 ,0.8);
+    /* color: white; */
+}
+
+.about-header{
+    color:var(--yellow);
     font-family: var(--header_font);
-    background-color: #ecffe3;
-    background-size: cover;
-    background-position: center; 
-  }
-  
-  .about {
-    padding: 10px 40px;
-    background-color: #26A69A;
-    cursor: pointer;
-    box-shadow: 0 7px #004D40;
-    border-radius: 5px;
-  }
-  
-  .about:active {
+    text-align: center;
+    font-size: 40px;
     position: relative;
-    top: 7px;
-    box-shadow: none;
-  }
-  
-  .about-wrapper .heading h2{
-  text-align: center;
-  color: black;
-  font-weight: bolder;
-  font-size: 45px;
-  font-family: var(--header_font);
-  padding-bottom: 50px;
-  border-bottom: 2px grey solid;
-  }
-  
-  .about-wrapper .heading p{
+    margin-bottom: 15px;
+}
+
+.about-header::after{
+    content: "";
+    height: 0.25rem;
+    background-color: white;
+    width: 41%;
+    position: absolute;
+    right: -5px;
+    top: 20px;
+    border-radius: 20px;
+}
+
+.about-header::before{
+    content: "";
+    height: 0.25rem;
+    background-color: white;
+    width: 41%;
+    position: absolute;
+    left: -5px;
+    top: 20px;
+    border-radius: 20px;
+}
+
+.about-content{
+    margin: 10px auto;
+    display: flex;
+}
+
+.about-desc{
+    flex : 0 0 80%;
+    /* background-color: red; */
+    padding: 20px 0;
     text-align: justify;
-    color: black;
+}
+
+.desc-title{
+    color: yellow;
+    font-family: var(--mate_font);
+    position: relative;
+    font-size: 40px;
+    margin: 10px;
+    left: 5px;
+    letter-spacing: 2px;
+}
+.desc-title::before{
+    content: "";
+    height: 100%;
+    background-color: white;
+    width: 0.20rem;
+    position: absolute;
+    left: -10px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.desc-content{
+    padding: 15px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 5px 3px 3px 3px rgba(56, 57, 64 ,0.5);
     font-family: var(--text_font);
-    margin-bottom: 80px;
-    margin: 80px 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: justify;
+    min-height: 80%;
+}
+
+.desc-content p{
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+
+.desc-content .Bali{
+    color: var(--yellow)!important;
+    text-shadow: 2px 2px rgba(56, 57, 64 ,0.9);
+    font-weight: bolder;
+}
+
+.desc-content a{
+    color: black;
+}
+
+.about-socmed{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    padding: 5px;
+}
+.socmed-header{
+    color: var(--yellow);
+    font-family: var(--mate_font);
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 10px 0;
+    letter-spacing: 7px;
+
+}
+.socmed{
+    background: white;
+    margin: 5px 10px;
+    font-weight: bold;
+    font-family: var(--text_font);
+    padding: 2px 5px;
+    border-radius: 15px;
+    width: 100%;
+    font-size: 15px;
+    box-shadow: 5px 3px 3px 3px rgba(56, 57, 64 ,0.5);
+    text-align: center;
+    height: 25%;
+    display: inline-block;
+    border: none;
+    /* vertical-align: middle; */
+    line-height: 50px;
+    transition: all .2s;
+}
+
+.socmed:hover{
+    transform: scale(1.05);
+    background-color: var(--yellow);
+    color: black;
+}
+
+
+.about-socmed a{
+    color:black;
     font-size: 20px;
+}
+.fa-facebook{
+    color: #1877f2;
+}
+.fa-instagram{
+    background:-webkit-linear-gradient(215deg,#4c5fd7,#7232bd,#c32aa3,#f46f30,#ffdc7d);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+.fa-youtube{
+    color: #ff0000;
+}
+.fa-twitter{
+    color: #1da1f2;
+}
+.about-socmed .fa{
+    margin: 5px 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    float: left;
     line-height: 40px;
-    }
+}
+
+.about-maps{
+    box-shadow: 15px 13px 13px 13px rgba(56, 57, 64 ,0.5);
+    border-radius: 15px;
+    transition: all .2s ;
+}
+
+.about-maps:hover{
+    transform: scale(1.025);
+}
+.about-maps iframe{
+    border-radius: 15px;
+    border: 5px solid var(--yellow);
+}
+
