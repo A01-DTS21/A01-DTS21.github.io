@@ -140,7 +140,6 @@ header .menu a:hover{
     padding: 20px 30px;
     display: inline-block;
     border-radius: 10px;
-    /* margin-top: 200px; */
 }
 .get-ticket{
     color: var(--yellow);
@@ -446,9 +445,6 @@ textarea:focus, input:focus{
     outline: none;
 }
 
-.booking-btn {
-    width: 400px;
-}
 
 .booking-button {
     background: var(--yellow);
@@ -457,12 +453,14 @@ textarea:focus, input:focus{
     border-left: 0;
     border-right: 0;
     border-bottom: 5px solid #ebb434;
-    padding: 10px 140px;
     text-decoration: none;
     font-family: var(--header_font);
     font-size: 25px;
     font-weight: bold;
     border-radius: 10px;
+    text-align: center;
+    width: 50%;
+    margin-top: auto!important;
 }
 
 /* margin-fa */
