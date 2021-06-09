@@ -451,6 +451,10 @@ input, textarea {
     margin-top: auto;
 }
 
+textarea:focus, input:focus{
+    outline: none;
+}
+
 .booking-btn {
     width: 400px;
 }
