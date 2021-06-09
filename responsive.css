@@ -92,4 +92,31 @@
     .activity-desc p{
         font-size: 20px;
     }
+
+    .about-content{
+        flex-direction: column;
+        flex: none;
+    }
+
+    .about-header::after{
+        width: 36%;
+    }
+    
+    .about-header::before{
+        width: 36%;
+    }
+
+    .about-desc{
+        flex: none;
+        width: 100%;
+    }
+
+    .about-socmed .fa{
+        float: none;
+    }
+
+    .socmed{
+        padding-top: none;
+        margin: 10px auto;
+    }
 }
