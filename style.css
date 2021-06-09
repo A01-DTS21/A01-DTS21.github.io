@@ -378,6 +378,95 @@ header .menu a:hover{
 }
 /* Nama class jangan nabrak ya, makasi SEMANGAT!! */
 
+/* booking */
+.booking-wrapper {
+    padding: 100px 0 50px 0px;
+    background-color: whitesmoke;
+    border-top: 4px solid var(--yellow);
+    color: black;
+    text-align: left;
+}
+
+.booking-header {
+    text-align: left;
+    margin: 0px 15px 0px 15px;
+    color: black;
+    font-family: var(--yellow);
+    font-size: 35px;
+    font-family: var(--header_font);
+    position: relative;
+}
+
+.booking-header::after {
+    content: "";
+    height: 0.18rem;
+    background-color: var(--yellow);
+    width: 75%;
+    position: absolute;
+    left: 250px;
+    top: 20px;
+}
+
+.form {
+    padding: 20px 20px;
+    margin-left: 10px;
+    /* z-index: 3; */
+    /* background-image: linear-gradient(rgba(56, 57, 64 ,0.7)),url(./img/pura2.png); */
+    /* background-image: url(./img/pura2.png);
+    background-size: cover;
+    opacity: 0.5; */
+}
+
+.booking-image {
+    background-image: url(./img/pura2.png);
+    background-size: cover;
+    /* background: rgba(56, 57, 64 ,0.5) */
+    opacity: 0.5;
+}
+
+.form-group {
+    padding-bottom: 20px;
+    /* z-index: 2;    */
+}
+
+.form-group p {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: var(--text_font);
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: none;
+    border-radius: 10px;
+    font-family: var(--text_font);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: auto;
+}
+
+.booking-btn {
+    width: 400px;
+}
+
+.booking-button {
+    background: var(--yellow);
+    color: black;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 5px solid #ebb434;
+    padding: 10px 140px;
+    text-decoration: none;
+    font-family: var(--header_font);
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
 
 /* footer */
 .fa{
