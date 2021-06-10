@@ -419,6 +419,7 @@ header .menu a:hover{
     padding-bottom: 20px;
 }
 
+
 .form-group p {
     font-size: 20px;
     line-height: 25px;
@@ -439,10 +440,12 @@ input, textarea {
     font-weight: bold;
     text-align: center;
     margin-top: auto;
+    transition: transform .2s;
 }
 
 textarea:focus, input:focus{
     outline: none;
+    transform: scale(1.08);
 }
 
 
@@ -460,7 +463,20 @@ textarea:focus, input:focus{
     border-radius: 10px;
     text-align: center;
     width: 50%;
-    margin-top: auto!important;
+    margin-top: 10px!important;
+    transition: all .2s;
+    animation: MoveUpDown 1.75s linear infinite;
+    position: relative;
+}
+
+.booking-button:hover{
+    transform: scale(1.05);
+}
+
+.booking-button:active{
+    position: relative;
+    top: 5px;
+    box-shadow: none;
 }
 
 /* margin-fa */
